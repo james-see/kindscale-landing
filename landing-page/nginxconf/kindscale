@@ -1,0 +1,18 @@
+server {
+        error_log /var/log/nginx/kindscale.log error;
+        root /var/www/kindscale/html;
+        index index.html index.htm index.php;
+
+        server_name kindscale.com www.kindscale.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+        location ~ \.php$ {
+                fastcgi_split_path_info ^(.+\.php)(/.+)$;
+                include snippets/fastcgi-php.conf;
+                fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        }
+
+
+}
