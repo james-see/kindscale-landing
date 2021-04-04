@@ -23,7 +23,7 @@ $title = 'New message from my Landing page';
 // Email field "From" - name of sender (e.g. your first & last name)
 $from_name = "James Campbell";
 // Email field "From" - email of sender (e.g. "robot@domain.com")
-$from_email = "james@evenflow.dev";
+$from_email = "james@kindscale.com";
 // Email to receive message - PUT YOUR EMAIL HERE (or leave it blank if you won't receive emails)
 $to = "james@jamescampbell.us"; // e.g. my@email.com"
 // Telegram integration: token of created bot
